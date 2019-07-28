@@ -25,3 +25,16 @@ getVideos(){
 
 
 Para esto se puede usar el link del video: https://www.youtube.com/watch?v=z9VfDlQMsDI
+
+Pipe para asegurar el DOM y se pueda insertar código de otras páginas
+
+```javascript
+export class DomseguroPipe implements PipeTransform {
+  constructor(private domSanitizer: DomSanitizer) {}
+  transform(value: string): any {
+    let url = "https://www.youtube.com/embed/";
+    return this.domSanitizer.bypassSecurityTrustResourceUrl(url + value);
+  }
+}
+
+```

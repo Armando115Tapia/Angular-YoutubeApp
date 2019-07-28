@@ -1,4 +1,3 @@
-import { YoutubeService } from './services/youtube.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,18 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'youtubeApp';
-  constructor(public _ytService: YoutubeService){
-    this._ytService.getVideos().subscribe();
-  }
 
-  // getVideos(){
-  //   this.ytService.getVideos().subscribe(data => {
-  //     console.log(data);
-  //   });
-  // }
+
 
   ngOnInit(){
-    // this.getVideos();
+
   }
 
 }
