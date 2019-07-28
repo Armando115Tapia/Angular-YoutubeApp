@@ -19,6 +19,9 @@ getVideos(){
             .pipe(map((res: any) => {console.log(res.items)}));
 
    }
+ // El link obtenido de aqui es:
+ // https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCQ8jTcfNOaBUwRSTQUybEug%26maxResults&maxResults=10&key='api-key'  
 ```
+
 
 Para esto se puede usar el link del video: https://www.youtube.com/watch?v=z9VfDlQMsDI
